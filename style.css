@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --Softblue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Verydarkbluemain: hsl(217, 54%, 11%);
+  --Verydarkbluecard: hsl(216, 50%, 16%);
+  --Verydarkblueline: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: var(--Verydarkbluemain);
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--Verydarkbluecard);
+  border-radius: 15px;
+  width: 275px;
+  padding: 1.5rem;
+  position: absolute;
+  box-shadow: 10px 10px 100px;
+  color: black;
+}
+
+.image {
+  position: relative;
+}
+
+.image div {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: 98%;
+  top: 0;
+  opacity: 0;
+}
+
+.image div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image div:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.bilden {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--White);
+}
+
+h1:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.description {
+  color: var(--Softblue);
+  font-weight: 300;
+  font-size: 15px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 25px;
+}
+
+.price-days {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 15px;
+  color: var(--Softblue);
+}
+
+.price {
+  color: var(--Cyan);
+  display: flex;
+  gap: 6px;
+}
+
+.days {
+  display: flex;
+  gap: 3px;
+}
+
+.Jules {
+  width: 30px;
+  margin-right: 8px;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+
+.creator {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.thx {
+  display: flex;
+  word-spacing: 1px;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--Softblue);
+}
+
+span {
+  color: var(--White);
+  margin-left: 4px;
+}
+
+span:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--Verydarkblueline);
+  margin-top: 1rem;
+}
+
+.attribution {
+  margin-top: 45rem;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  word-spacing: 1px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
